@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 
 export class HomeComponent {
+
+artImageUrl = 'public/assets/images/art1.jpg"';
+  
 }
