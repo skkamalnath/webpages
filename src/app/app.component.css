@@ -1,9 +1,27 @@
 .boxfill{
-	background-color: grey;
+	background-color:#337ab7;
+	border-radius: 0px 10px;
 }
 .text-white{
-	color:white;
+	color:#ffffff;
 }
 a{
 	color:#000;
+}
+.nav-pills{
+margin:10px 0px;
+}
+li{
+	background-color: #337ab7;
+	border-radius: 0px 15px;
+	border:5px solid #ffffff;
+}
+.navbar-inverse{
+	background-color:#ffffff;
+	border:2px solid #000000;
+	border-radius: 0px 10px;
+}
+div.span6 p{
+	color:#ffffff;
+	margin-top:10px;
 }
