@@ -1,29 +1,19 @@
 <nav class="navbar navbar-inverse">
  <div class="container">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">AppsBrew</a>
+      <a class="navbar-brand" href="#">appsBrew</a>
     </div>
     <ul class="nav nav-pills nav-justified">
-      <li><a href="#">Home</a></li>
-      <li><a href="#">About Us</a></li>
-      <li><a href="#">Register</a></li>
-      <li><a href="#">Contact Us</a></li>
+      <li><a routerLink="/home" routerLinkActive="active">Home</a></li>
+      <li><a routerLink="/aboutus" routerLinkActive="active">About Us</a></li>
+      <li><a routerLink="/register" routerLinkActive="active">Register</a></li>
+      <li><a routerLink="/contact" routerLinkActive="active">Contact Us</a></li>
     </ul>
   </div>
 </nav>
-<div class="container-fluid">
-	<div class="=row">
-		<div class="col-md-2">
-		<aside-page></aside-page>
-		</div>
-		<div class="col-md-7">
-		<home-page></home-page>
-		</div>
-		<div class="col-md-3">
-		<login-page></login-page>
-		</div>
-	</div>
-</div>
+<router-outlet></router-outlet>
+
+<footer>
 <div class="container-fluid boxfill">
 	<div class="row-fluid">
 	    <div class="span6 pull-left">
@@ -36,3 +26,4 @@
 	    </div>
 	</div>
 </div>
+</footer>

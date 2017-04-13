@@ -6,10 +6,15 @@
 	color:#ffffff;
 }
 a{
-	color:#000;
+	color:#fff;
 }
 .nav-pills{
 margin:10px 0px;
+}
+.nav > li > a:hover {
+  text-decoration: none;
+  background-color: #000000;
+  border-radius: 0px 10px;
 }
 li{
 	background-color: #337ab7;
@@ -24,4 +29,11 @@ li{
 div.span6 p{
 	color:#ffffff;
 	margin-top:10px;
+}
+a.navbar-brand{
+	color:#000000;
+	margin-top:10px;
+	font-size:25px;
+	padding:12px;
+	font-weight: bold;
 }
