@@ -16,6 +16,12 @@ div.thumbnail{
       margin: auto;
 }
 .carousel-control{
-	color: #ffffff;
-	background-color: #337ab7;
+	color: #fff;
+ width: 15%;
+  font-size: 20px;
+  text-align: center;
+  text-shadow: 0 0px 0px rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
+  filter: alpha(opacity=100);
+  opacity: 1;
 }
