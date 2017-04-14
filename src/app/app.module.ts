@@ -3,9 +3,11 @@ import { BrowserModule }        from '@angular/platform-browser';
 import { FormsModule }          from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { ImageZoomModule }      from 'angular2-image-zoom';
+import {DemoModule} from './demo/demo.module';
 
 import { AppComponent }          from './app.component';
 import { HomeComponent }    from './home/home.component';
+import { DemoComponent }    from './demo/demo.component';
 import { AboutUsComponent }     from './about/about-us.component';
 import { RegisterComponent }     from './register/register.component';
 import { ContactComponent }     from './contact/contact.component';
@@ -27,7 +29,8 @@ const appRoutes: Routes = [
     BrowserModule,
     FormsModule,
     RouterModule.forRoot(appRoutes),
-    ImageZoomModule
+    ImageZoomModule,
+    DemoModule
   ],
   declarations: [
     AppComponent,
