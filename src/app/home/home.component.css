@@ -1,3 +1,7 @@
 li{
 	border-radius: 10px;
 }
+.btn, .btn-primary{
+	padding:5px 70px;
+	margin:5px 0px;
+}
