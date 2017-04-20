@@ -14,6 +14,29 @@
 <br/>TamilNadu,
 <br/>India - 600020.
 <br/>Phone: 001 408 242 7567</h4>
+<br/>
+
+<sebm-google-map
+        [latitude]="lat"
+        [longitude]="lng"
+        [zoom]="zoom"
+        [disableDefaultUI]="true"
+        [zoomControl]="false"
+        [streetViewControl]="false">
+
+    <custom-map-marker
+        *ngFor="let cluster of clusters; let i = index"
+        [markersInCluster]="cluster.markers"
+        [addressId]="cluster.address_id"
+        [lat]="cluster.coordinates.lat"
+        [lng]="cluster.coordinates.lng"
+        [label]="cluster.price.raw"
+        [isViewed]="true"
+        (markerClick)="onMarkerClick($event)">
+    </balu-map-marker>
+
+</sebm-google-map>
+
 </div>
 </div>
     <div class="col-md-3">
