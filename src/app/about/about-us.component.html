@@ -1,60 +1,28 @@
 <div class="container-fluid">
   <div class="=row">
-    <div class="col-md-2">
-    <aside-page></aside-page>
+  <div class="col-sm-2">
+<h3><strong>Directive List:</strong></h3>
+  <button class="btn btn-primary" (click)="value=1">ngClass</button>
+  <button class="btn btn-primary" (click)="value=2">ngFor</button>
+  <button class="btn btn-primary" (click)="value=3">ngIf</button>
+  <button class="btn btn-primary" (click)="value=4">ngShow</button>
+  <button class="btn btn-primary" (click)="value=5">ngStyle</button>
+  <button class="btn btn-primary" (click)="value=6">ngSwitch</button>
+</div>
+<div class="col-sm-10 jumbotron">
+  <div [ngSwitch]="value">
+	<div *ngSwitchCase="1"><ng-class-directive></ng-class-directive></div>
+	<div *ngSwitchCase="2"><ng-for-directive></ng-for-directive></div>
+	<div *ngSwitchCase="3"><ng-if-directive></ng-if-directive></div>
+	<div *ngSwitchCase="4"><ng-show-directive></ng-show-directive></div>
+	<div *ngSwitchCase="5"><ng-style-directive></ng-style-directive></div>
+	<div *ngSwitchCase="6"><ng-switch-directive></ng-switch-directive></div>
+	<div *ngSwitchDefault><ng-class-directive></ng-class-directive></div>  
+  </div>
+  </div>
+	<div class="wrapper">
+    <carousel></carousel>
     </div>
 
-<div class="jumbotron col-md-7">
-<h3>7 Keys to Angular</h3>
-	<div class="row">
-		<div class="col-md-6 box">
-			<div class="box1">
-			        <a href="/assets/images/art21.jpg" target="_blank">
-		          <br/><img class="img-thumbnail" src="/assets/images/art21.jpg" alt="Lights" style="width:100%">
-		        </a>
-		     </div>
-		     <div class="box2">
-			        <a href="/assets/images/art23.jpg" target="_blank">
-		          <br/><img class="img-thumbnail" src="/assets/images/art23.jpg" alt="Lights" style="width:100%">
-		        </a>
-		     </div>
-		     <div class="box3">
-			        <a href="/assets/images/art25.jpg" target="_blank">
-		          <br/><img class="img-thumbnail" src="/assets/images/art25.jpg" alt="Lights" style="width:100%">
-		        </a>
-		    </div>
-		    <div class="box4">
-			        <a href="/assets/images/art27.jpg" target="_blank">
-		          <br/><img class="img-thumbnail" src="/assets/images/art27.jpg" alt="Lights" style="width:100%">
-		        </a>
-		    </div>
-		</div>
-		<div class="col-md-6 box">
-			<div class="box5">
-			        <a href="/assets/images/art22.jpg" target="_blank">
-		          <br/><img class="img1 img-thumbnail" src="/assets/images/art22.jpg" alt="Lights" style="width:100%">
-		        </a>
-		    </div>
-		    <div class="box6">
-			        <a href="/assets/images/art24.jpg" target="_blank">
-		          <br/><img class="img1 img-thumbnail" src="/assets/images/art24.jpg" alt="Lights" style="width:100%">
-		        </a>
-		    </div>
-		    <div class="box7">
-			        <a href="/assets/images/art26.jpg" target="_blank">
-		          <br/><img class="img1 img-thumbnail" src="/assets/images/art26.jpg" alt="Lights" style="width:100%">
-		        </a>
-		    </div>
-		    <div class="box8">
-			        <a href="/assets/images/art28.jpg" target="_blank">
-		          <br/><img class="img1 img-thumbnail" src="/assets/images/art28.jpg" alt="Lights" style="width:100%">
-		        </a>
-		    </div>
-		</div>
-	</div>
 </div>
-    <div class="col-md-3">
-    <login-page></login-page>
-    </div>
-  </div>
 </div>
