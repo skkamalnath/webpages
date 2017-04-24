@@ -14,30 +14,36 @@
 <br/>TamilNadu,
 <br/>India - 600020.
 <br/>Phone: 001 408 242 7567</h4>
-<br/>
-
-<sebm-google-map
-        [latitude]="lat"
-        [longitude]="lng"
-        [zoom]="zoom"
-        [disableDefaultUI]="true"
-        [zoomControl]="false"
-        [streetViewControl]="false">
-
-    <custom-map-marker
-        *ngFor="let cluster of clusters; let i = index"
-        [markersInCluster]="cluster.markers"
-        [addressId]="cluster.address_id"
-        [lat]="cluster.coordinates.lat"
-        [lng]="cluster.coordinates.lng"
-        [label]="cluster.price.raw"
-        [isViewed]="true"
-        (markerClick)="onMarkerClick($event)">
-    </balu-map-marker>
-
-</sebm-google-map>
-
 </div>
+<br/>
+    <sebm-google-map 
+      [latitude]="lat"
+      [longitude]="lng"
+      [zoom]="zoom"
+      [disableDefaultUI]="false"
+      [zoomControl]="false"
+      (mapClick)="mapClicked($event)">
+      <sebm-google-map-marker 
+          *ngFor="let m of markers; let i = index"
+          (markerClick)="clickedMarker(m.label, i)"
+          [latitude]="m.lat"
+          [longitude]="m.lng"
+          [label]="m.label"
+          [markerDraggable]="m.draggable"
+          (dragEnd)="markerDragEnd(m, $event)">
+        <sebm-google-map-info-window>
+          <strong>InfoWindow content</strong>
+        </sebm-google-map-info-window>
+      </sebm-google-map-marker>
+      <sebm-google-map-circle [latitude]="lat + 0" [longitude]="lng + 0" 
+          [radius]="5000"
+          [fillColor]="'blue'"
+          [circleDraggable]="true"
+          [editable]="true">
+      </sebm-google-map-circle>
+    </sebm-google-map>
+
+
 </div>
     <div class="col-md-3">
     <login-page></login-page>
